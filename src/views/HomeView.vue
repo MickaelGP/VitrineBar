@@ -16,7 +16,7 @@ import ReservationSectionComponent from '@/components/ReservationSectionComponen
     <AboutSectionComponent />
     <section id="show-card">
       <div class="container text-center image-view text-white">
-        <h2>Découvrez notre carte</h2>
+        <h2>Discover our menu</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto similique</p>
         <div class="mb-3">
           <a href="" class="btn btn-primary">See our menu</a>
