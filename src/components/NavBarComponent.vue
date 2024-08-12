@@ -16,13 +16,10 @@ import { RouterLink } from 'vue-router';
                             <RouterLink to="/" class="nav-link text-white">Home</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <RouterLink to="/about" class="nav-link text-white">Menu</RouterLink>
+                            <RouterLink to="/menu" class="nav-link text-white">Menu</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <RouterLink to="/about" class="nav-link text-white">Contact</RouterLink>
-                        </li>
-                        <li class="nav-item">
-                           <a href="#reservation" class="nav-link text-white">Reserve a table</a>
+                            <RouterLink to="/contact" class="nav-link text-white">Contact</RouterLink>
                         </li>
                     </ul>
                 </div>

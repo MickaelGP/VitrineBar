@@ -13,19 +13,20 @@ import ReservationSectionComponent from '@/components/ReservationSectionComponen
         <a href="#plus" class="btn btn-primary btn-lg">Book now</a>
       </div>
     </div>
-  </main>
-  <AboutSectionComponent />
-  <section id="show-card">
-    <div class="container text-center image-view text-white">
-      <h2>Découvrez notre carte</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto similique</p>
-      <div class="mb-3">
-        <a href="" class="btn btn-primary">See our menu</a>
+    <AboutSectionComponent />
+    <section id="show-card">
+      <div class="container text-center image-view text-white">
+        <h2>Découvrez notre carte</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto similique</p>
+        <div class="mb-3">
+          <a href="" class="btn btn-primary">See our menu</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <ServiceSectionComponent />
-  <ReservationSectionComponent />
+    </section>
+    <ServiceSectionComponent />
+    <ReservationSectionComponent />
+  </main>
+
   <FooterComponent />
 </template>
 <style scoped>
@@ -66,16 +67,19 @@ footer {
 .image-view {
   padding: 5rem;
 }
+
 a {
-    background-color: transparent;
-    border: 1px solid white;
+  background-color: transparent;
+  border: 1px solid white;
 }
-a:hover{
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+
+a:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
-.btn-primary:focus{
-    --bs-btn-active-bg: var(--primary-color);
-    border: 1px solid var(--primary-color); 
+
+.btn-primary:focus {
+  --bs-btn-active-bg: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 </style>
