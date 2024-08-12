@@ -15,6 +15,7 @@ import InputComponent from './InputComponent.vue';
                     <InputComponent label-title="Phone number :" id-input="inputPhone" type="number"/>
                     <InputComponent label-title="Date :" id-input="inputDate" type="date"/>
                     <InputComponent label-title="Comment :" id-input="inputComment" type="text"/>
+                    <InputComponent label-title="Hour :" id-input="inputhour" type="time"/>
                     <div class="text-center py-3">
                         <button class="btn btn-primary">Send</button>
                     </div>
