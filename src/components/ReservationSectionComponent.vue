@@ -5,8 +5,8 @@ import InputComponent from './InputComponent.vue';
     <section id="reservation">
         <div class="container text-white">
             <div class="text-center py-5">
-                <span class="sub-title">Réservation</span>
-                <h3>Faites une réservation</h3>
+                <span class="sub-title">Reservation</span>
+                <h3>Make a reservation</h3>
             </div>
             <div class="container w-50">
                 <form action="">

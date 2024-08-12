@@ -13,7 +13,7 @@ import { RouterLink } from 'vue-router';
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <RouterLink to="/" class="nav-link text-white">Accueil</RouterLink>
+                            <RouterLink to="/" class="nav-link text-white">Home</RouterLink>
                         </li>
                         <li class="nav-item">
                             <RouterLink to="/about" class="nav-link text-white">Menu</RouterLink>
@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router';
                             <RouterLink to="/about" class="nav-link text-white">Contact</RouterLink>
                         </li>
                         <li class="nav-item">
-                           <a href="#reservation" class="nav-link text-white">Réserver une table</a>
+                           <a href="#reservation" class="nav-link text-white">Reserve a table</a>
                         </li>
                     </ul>
                 </div>

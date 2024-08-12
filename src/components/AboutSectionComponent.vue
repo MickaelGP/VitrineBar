@@ -13,7 +13,7 @@
                         </p>
                     </div>
                     <div>
-                        <a href="" class="btn btn-primary">Réserver une table</a>
+                        <a href="" class="btn btn-primary">Reserve a table</a>
                     </div>
                 </div>
                 <div class="d-none d-lg-block col-lg-6 text-center">

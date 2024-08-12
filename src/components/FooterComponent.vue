@@ -23,13 +23,13 @@ import IconMap from './icon/IconMap.vue';
                     <h4>Navigation</h4>
                     <ul>
                         <li>
-                            <RouterLink to="/" class="nav-link">Acceuil</RouterLink>
+                            <RouterLink to="/" class="nav-link">Home</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/" class="nav-link">Menu</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/" class="nav-link">Évènement</RouterLink>
+                            <RouterLink to="/" class="nav-link">Event</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/" class="nav-link">Contact</RouterLink>
@@ -39,7 +39,7 @@ import IconMap from './icon/IconMap.vue';
             </div>
             <div class="col-lg-3">
                 <div class="mt-2">
-                    <h4>Contactez-nous</h4>
+                    <h4>Contact us</h4>
                     <div>
                         <a href="tel:+3349300000" class="nav-link"><InconTelephone/> 049300000</a>
                         <a href="tmailto:resa@bistrotdesamis.fr" class="nav-link"><IconMail/> resa@bistrotdesamis.fr</a>
@@ -49,7 +49,7 @@ import IconMap from './icon/IconMap.vue';
             </div>
             <div class="col-lg-3">
                 <div class="mt-2">
-                <h4>Horaires d'ouverture</h4>
+                <h4>Opening hours</h4>
                 </div>
                 <div>
                     <ul class="list-group list-group-flush">

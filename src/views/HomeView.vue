@@ -9,8 +9,8 @@ import ReservationSectionComponent from '@/components/ReservationSectionComponen
     <div class="hero d-flex align-items-center justify-content-center">
       <div class="hero-overlay"></div>
       <div class="hero-content text-center">
-        <h1 class="display-3">Un endroit festif entre amis</h1>
-        <a href="#plus" class="btn btn-primary btn-lg">Réserver</a>
+        <h1 class="display-3">A festive place with friends</h1>
+        <a href="#plus" class="btn btn-primary btn-lg">Book now</a>
       </div>
     </div>
   </main>
@@ -20,7 +20,7 @@ import ReservationSectionComponent from '@/components/ReservationSectionComponen
       <h2>Découvrez notre carte</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto similique</p>
       <div class="mb-3">
-        <a href="" class="btn btn-primary">Voir notre carte</a>
+        <a href="" class="btn btn-primary">See our menu</a>
       </div>
     </div>
   </section>
