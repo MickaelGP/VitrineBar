@@ -9,7 +9,7 @@ import IconMap from './icon/IconMap.vue';
 <template>
     <footer class="bg-black text-white">
         <div class="row mx-0">
-            <div class="col-lg-3">
+            <div class="col-lg-3 pt-3">
                 <img src="" alt="">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum cumque facere dolorem eveniet
@@ -18,26 +18,26 @@ import IconMap from './icon/IconMap.vue';
                     delectus veritatis.
                 </p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 pt-3">
                 <div class="mt-2">
                     <h4>Navigation</h4>
-                    <ul>
-                        <li>
+                    <div class="row">
+                        <div class="col-6">
                             <RouterLink to="/" class="nav-link">Home</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/" class="nav-link">Menu</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/" class="nav-link">Event</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/" class="nav-link">Contact</RouterLink>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="col-6">
+                            <RouterLink to="/menu" class="nav-link">Menu</RouterLink>
+                        </div>
+                        <div class="col-6">
+                            <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+                        </div>
+                        <div class="col-6">
+                            <a href="/#reservation" class="nav-link">Reservation</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 pt-3">
                 <div class="mt-2">
                     <h4>Contact us</h4>
                     <div>
@@ -47,19 +47,19 @@ import IconMap from './icon/IconMap.vue';
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 pt-3">
                 <div class="mt-2">
                 <h4>Opening hours</h4>
                 </div>
                 <div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-black text-white">Lundi 9h00-00h30</li>
-                        <li class="list-group-item bg-black text-white">Mardi 9h00-00h30</li>
-                        <li class="list-group-item bg-black text-white">Mercredi 9h00-00h30</li>
-                        <li class="list-group-item bg-black text-white">Jeudi 9h00-00h30</li>
-                        <li class="list-group-item bg-black text-white">Vendredi 9h00-00h30</li>
-                        <li class="list-group-item bg-black text-white">Samedi 9h00-00h30</li>
-                        <li class="list-group-item bg-black text-white">Dimanche Fermé</li>
+                        <li class="list-group-item bg-black text-white"><span class="day">Monday :</span> <span class="time-day">9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Tuesday :</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Wednesday</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Thursday</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Friday</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Saturday</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Sunday</span> <span>Close</span></li>
                     </ul>
                 </div>
             </div>
@@ -74,5 +74,19 @@ import IconMap from './icon/IconMap.vue';
             </div>
         </div>
     </footer>
-
 </template>
+<style>
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+.router-link-exact-active{
+    color: var(--primary-color);
+}
+.list-group-item { 
+    display: flex;
+    justify-content: space-between;
+}
+</style>

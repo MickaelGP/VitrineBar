@@ -13,13 +13,16 @@ import { RouterLink } from 'vue-router';
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <RouterLink to="/" class="nav-link text-white">Home</RouterLink>
+                            <RouterLink to="/" class="nav-link">Home</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <RouterLink to="/menu" class="nav-link text-white">Menu</RouterLink>
+                            <RouterLink to="/menu" class="nav-link">Menu</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <RouterLink to="/contact" class="nav-link text-white">Contact</RouterLink>
+                            <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/#reservation" class="nav-link">Reservation</a>
                         </li>
                     </ul>
                 </div>
@@ -27,3 +30,14 @@ import { RouterLink } from 'vue-router';
         </nav>
     </header>
 </template>
+<style scoped>
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+.router-link-exact-active{
+    color: var(--primary-color);
+}
+</style>
