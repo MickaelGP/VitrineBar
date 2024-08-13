@@ -2,7 +2,7 @@
     <section class="bg-black text-white py-3">
         <div class="container">
             <div class="text-center my-3" id="title-service">
-                <span class="sub-title">Our services</span>
+                <span class="sub-title">Nos services</span>
                 <h3>Services</h3>
             </div>
             <div class="row">

@@ -6,18 +6,18 @@ import InputComponent from './InputComponent.vue';
         <div class="container text-white">
             <div class="text-center py-5">
                 <span class="sub-title">Reservation</span>
-                <h3>Make a reservation</h3>
+                <h3>Faire une reservation</h3>
             </div>
             <div class="container w-50">
                 <form action="">
                     <InputComponent label-title="Email :" id-input="inputMail" type="email"/>
-                    <InputComponent label-title="Name :" id-input="inputName" type="text"/>
-                    <InputComponent label-title="Phone number :" id-input="inputPhone" type="number"/>
+                    <InputComponent label-title="Nom :" id-input="inputName" type="text"/>
+                    <InputComponent label-title="Téléphone :" id-input="inputPhone" type="number"/>
                     <InputComponent label-title="Date :" id-input="inputDate" type="date"/>
-                    <InputComponent label-title="Comment :" id-input="inputComment" type="text"/>
-                    <InputComponent label-title="Hour :" id-input="inputhour" type="time"/>
+                    <InputComponent label-title="Commentaire :" id-input="inputComment" type="text"/>
+                    <InputComponent label-title="Heure :" id-input="inputhour" type="time"/>
                     <div class="text-center py-3">
-                        <button class="btn btn-primary">Send</button>
+                        <button class="btn btn-primary">Réserver</button>
                     </div>
                 </form>
             </div>

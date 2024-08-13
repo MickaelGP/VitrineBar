@@ -13,16 +13,16 @@ import InputComponent from '@/components/InputComponent.vue';
         <section id="contact-section">
             <div class="container text-white">
                 <div class="text-center py-5">
-                    <h2 class="">Contact us</h2>
+                    <h2 class="">Nous contacter</h2>
                 </div>
                 <div class="container w-50">
                     <form action="">
                         <InputComponent label-title="Email :" id-input="inputMail" type="email" />
-                        <InputComponent label-title="Name :" id-input="inputName" type="text" />
-                        <InputComponent label-title="Phone number :" id-input="inputPhone" type="number" />
+                        <InputComponent label-title="Nom :" id-input="inputName" type="text" />
+                        <InputComponent label-title="Téléphone :" id-input="inputPhone" type="number" />
                         <InputComponent label-title="Message :" id-input="inputComment" type="text" />
                         <div class="text-center py-5">
-                            <button class="btn btn-primary">Send</button>
+                            <button class="btn btn-primary">Envoyer</button>
                         </div>
                     </form>
                 </div>

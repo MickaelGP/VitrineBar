@@ -9,17 +9,17 @@ import ReservationSectionComponent from '@/components/ReservationSectionComponen
     <div class="hero d-flex align-items-center justify-content-center">
       <div class="hero-overlay"></div>
       <div class="hero-content text-center">
-        <h1 class="display-3">A festive place with friends</h1>
-        <a href="#plus" class="btn btn-primary btn-lg">Book now</a>
+        <h1 class="display-3">Un lieu festif entre amis</h1>
+        <a href="#plus" class="btn btn-primary btn-lg">Réservez</a>
       </div>
     </div>
     <AboutSectionComponent />
     <section id="show-card">
       <div class="container text-center image-view text-white">
-        <h2>Discover our menu</h2>
+        <h2>Découvrez notre carte</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto similique</p>
         <div class="mb-3">
-          <a href="" class="btn btn-primary">See our menu</a>
+          <a href="" class="btn btn-primary">Voir la carte</a>
         </div>
       </div>
     </section>

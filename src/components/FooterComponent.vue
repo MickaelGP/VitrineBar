@@ -23,10 +23,10 @@ import IconMap from './icon/IconMap.vue';
                     <h4>Navigation</h4>
                     <div class="row">
                         <div class="col-6">
-                            <RouterLink to="/" class="nav-link">Home</RouterLink>
+                            <RouterLink to="/" class="nav-link">Accueil</RouterLink>
                         </div>
                         <div class="col-6">
-                            <RouterLink to="/menu" class="nav-link">Menu</RouterLink>
+                            <RouterLink to="/menu" class="nav-link">La carte</RouterLink>
                         </div>
                         <div class="col-6">
                             <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
@@ -39,7 +39,7 @@ import IconMap from './icon/IconMap.vue';
             </div>
             <div class="col-lg-3 pt-3">
                 <div class="mt-2">
-                    <h4>Contact us</h4>
+                    <h4>Nous contacter</h4>
                     <div>
                         <a href="tel:+3349300000" class="nav-link"><InconTelephone/> 049300000</a>
                         <a href="tmailto:resa@bistrotdesamis.fr" class="nav-link"><IconMail/> resa@bistrotdesamis.fr</a>
@@ -49,17 +49,17 @@ import IconMap from './icon/IconMap.vue';
             </div>
             <div class="col-lg-3 pt-3">
                 <div class="mt-2">
-                <h4>Opening hours</h4>
+                <h4>Horaires d'ouvertures</h4>
                 </div>
                 <div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-black text-white"><span class="day">Monday :</span> <span class="time-day">9h00-00h30</span></li>
-                        <li class="list-group-item bg-black text-white"><span>Tuesday :</span> <span>9h00-00h30</span></li>
-                        <li class="list-group-item bg-black text-white"><span>Wednesday</span> <span>9h00-00h30</span></li>
-                        <li class="list-group-item bg-black text-white"><span>Thursday</span> <span>9h00-00h30</span></li>
-                        <li class="list-group-item bg-black text-white"><span>Friday</span> <span>9h00-00h30</span></li>
-                        <li class="list-group-item bg-black text-white"><span>Saturday</span> <span>9h00-00h30</span></li>
-                        <li class="list-group-item bg-black text-white"><span>Sunday</span> <span>Close</span></li>
+                        <li class="list-group-item bg-black text-white"><span class="day">Lundi :</span> <span class="time-day">9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Mardi :</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Mercredi :</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Jeudi :</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Vendredi :</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Samedi :</span> <span>9h00-00h30</span></li>
+                        <li class="list-group-item bg-black text-white"><span>Dimanche :</span> <span>Fermé</span></li>
                     </ul>
                 </div>
             </div>

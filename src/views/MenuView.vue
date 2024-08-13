@@ -6,7 +6,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         <section id="cocktails">
             <div class="container">
                 <div class="text-center py-5">
-                    <span class="sub-title">Menu</span>
+                    <span class="sub-title">La carte</span>
                     <h3>Cocktails</h3>
                 </div>
                 <div class="row mx-0 py-5">
@@ -211,7 +211,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         <section id="whisky" class="bg-black">
             <div class="container">
                 <div class="text-center py-5">
-                    <span class="sub-title">Menu</span>
+                    <span class="sub-title">La carte</span>
                     <h3>Whisky</h3>
                 </div>
                 <div class="row mx-0 py-5">

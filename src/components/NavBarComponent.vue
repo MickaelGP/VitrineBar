@@ -13,10 +13,10 @@ import { RouterLink } from 'vue-router';
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <RouterLink to="/" class="nav-link">Home</RouterLink>
+                            <RouterLink to="/" class="nav-link">Accueil</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <RouterLink to="/menu" class="nav-link">Menu</RouterLink>
+                            <RouterLink to="/menu" class="nav-link">La carte</RouterLink>
                         </li>
                         <li class="nav-item">
                             <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
