@@ -3,12 +3,17 @@ import FooterComponent from '@/components/FooterComponent.vue';
 import AboutSectionComponent from '@/components/AboutSectionComponent.vue';
 import ServiceSectionComponent from '@/components/ServiceSectionComponent.vue';
 import ReservationSectionComponent from '@/components/ReservationSectionComponent.vue';
+
+
+// function handleIntersect(element) {
+//   element.classList.add('visible');
+// }
 </script>
 <template>
   <main>
-    <div class="hero d-flex align-items-center justify-content-center">
+    <div class="hero d-flex align-items-center justify-content-center" >
       <div class="hero-overlay"></div>
-      <div class="hero-content text-center">
+      <div class="hero-content text-center before-enter" v-scrollanimation>
         <h1 class="display-3">Un lieu festif entre amis</h1>
         <a href="#plus" class="btn btn-primary btn-lg">Réservez</a>
       </div>
@@ -81,5 +86,14 @@ a:hover {
 .btn-primary:focus {
   --bs-btn-active-bg: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+.before-enter{
+opacity: 0;
+transform: translateY(100px);
+transition: all 2s ease-out;
+}
+.visible{
+  opacity: 1;
+  transform: translateY(0px);
 }
 </style>
