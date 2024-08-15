@@ -5,6 +5,26 @@ import IconMap from '@/components/icon/IconMap.vue';
 import IconInstagrame from '@/components/icon/IconInstagrame.vue';
 import IconMail from '@/components/icon/IconMail.vue';
 import InconTelephone from '@/components/icon/InconTelephone.vue';
+import emailjs from 'emailjs-com';
+import { ref } from 'vue';
+const form = ref(null);
+const isInvalid = ref(false)
+
+const sendMail = () => {
+    emailjs.sendForm('service_v2in807', 'template_yu52z5e', form.value, 'KMtCLjlyT1ujMGgMX')
+        .then(
+            () => {
+                console.log('SUCCESS!');
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+            },
+        );
+    form.value.email.value = "";
+    form.value.name.value = "";
+    form.value.phone.value = "";
+    form.value.message.value = "";
+}
 function handleIntersect(el) {
     el.classList.add('visible-right');
 }
@@ -23,11 +43,15 @@ function handleIntersect(el) {
                     <h2 class="">Nous contacter</h2>
                 </div>
                 <div class="container w-50">
-                    <form action="">
-                        <InputComponent label-title="Email :" id-input="inputMail" type="email" />
-                        <InputComponent label-title="Nom :" id-input="inputName" type="text" />
-                        <InputComponent label-title="Téléphone :" id-input="inputPhone" type="number" />
-                        <InputComponent label-title="Message :" id-input="inputComment" type="text" />
+                    <form ref="form" @submit.prevent="sendMail">
+                        <InputComponent label-title="Email :" id-input="inputMail" name="email" type="email"
+                            :class="{ 'is-invalid': isInvalid }" />
+                        <InputComponent label-title="Nom :" id-input="inputName" type="text" name="name"
+                            :class="{ 'is-invalid': isInvalid }" />
+                        <InputComponent label-title="Téléphone :" id-input="inputPhone" type="text" name="phone"
+                            :class="{ 'is-invalid': isInvalid }" />
+                        <InputComponent label-title="Message :" id-input="inputComment" type="text" name="message"
+                            :class="{ 'is-invalid': isInvalid }" />
                         <div class="text-center py-5">
                             <button class="btn btn-primary">Envoyer</button>
                         </div>
@@ -53,7 +77,8 @@ function handleIntersect(el) {
                     </div>
                     <div class="col-lg-6 ">
                         <div class="row g-5 my-3">
-                            <div class="col-lg-6 text-center before-enter-right nous-trouver-badge" v-scrollanimation="handleIntersect">
+                            <div class="col-lg-6 text-center before-enter-right nous-trouver-badge"
+                                v-scrollanimation="handleIntersect">
                                 <div class="p-3 nous-trouver-card ">
                                     <IconMap />
                                     <h5>Adresse</h5>
@@ -62,13 +87,14 @@ function handleIntersect(el) {
 
                             </div>
                             <div class="col-lg-6 text-center before-enter nous-trouver-badge" v-scrollanimation>
-                                <div class="p-3 nous-trouver-card " >
+                                <div class="p-3 nous-trouver-card ">
                                     <IconMail />
                                     <h5>Email</h5>
                                     <span class="sub-title">resa@bistrotdesamis.fr</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6  text-center before-enter-right nous-trouver-badge" v-scrollanimation="handleIntersect">
+                            <div class="col-lg-6  text-center before-enter-right nous-trouver-badge"
+                                v-scrollanimation="handleIntersect">
                                 <div class="p-3 nous-trouver-card ">
                                     <InconTelephone />
                                     <h5>Téléphone</h5>
@@ -76,7 +102,7 @@ function handleIntersect(el) {
                                 </div>
                             </div>
                             <div class="col-lg-6  text-center before-enter nous-trouver-badge" v-scrollanimation>
-                                <div class="p-3 nous-trouver-card " >
+                                <div class="p-3 nous-trouver-card ">
                                     <IconInstagrame />
                                     <h5>Réseaux sociaux</h5>
                                     <span class="sub-title">Instagrame / Facebook</span>
@@ -179,15 +205,18 @@ h2,
     opacity: 1;
     transform: translateX(0px);
 }
-.nous-trouver-badge:nth-child(2){
+
+.nous-trouver-badge:nth-child(2) {
     transition-delay: 0.2s;
 }
-.nous-trouver-badge:nth-child(3){
+
+.nous-trouver-badge:nth-child(3) {
     transition-delay: 0.5s;
-    
+
 }
-.nous-trouver-badge:nth-child(4){
+
+.nous-trouver-badge:nth-child(4) {
     transition-delay: 1s;
-    
+
 }
 </style>
