@@ -61,12 +61,12 @@ a:hover {
 .before-enter-left {
     opacity: 0;
     transform: translateX(-100px);
-    transition: all 2s cubic-bezier(.88,.05,.08,1.24);
+    transition: all 1s cubic-bezier(.88,.05,.08,1.24);
 }
 .before-enter-right {
     opacity: 0;
     transform: translateX(100px);
-    transition: all 2s cubic-bezier(.88,.05,.08,1.24);
+    transition: all 1s cubic-bezier(.88,.05,.08,1.24);
 }
 .visible-left{
     opacity: 1;
