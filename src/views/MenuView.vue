@@ -229,8 +229,12 @@ footer {
     background-color: var(--secondary-color);
     color: white;
 }
-
-
+.image-cocktail{
+    height: 30rem;
+    background-image: url('../assets/img/cocktail.jpg');
+    background-position: center;
+    background-size: cover;
+}
 #whisky {
     color: white;
 }
